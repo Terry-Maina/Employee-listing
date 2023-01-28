@@ -42,3 +42,14 @@ const EmpCreate = () => {
                             <div className="card-title">
                                 <h2>Employee Create</h2>
                             </div>
+                               <div className="card-body">
+
+                                <div className="row">
+
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
+                                            <label>ID</label>
+                                            <input value={id} disabled="disabled" className="form-control"></input>
+                                        </div>
+                                    </div>
+                                    
