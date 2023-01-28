@@ -54,3 +54,18 @@ const EmpListing = () => {
                             </tr>
                         </thead>
                         <tbody>
+
+                        {empdata &&
+                            empdata.map(item => (
+                                <tr key={item.id}>
+                                    <td>{item.id}</td>
+                                    <td>{item.name}</td>
+                                    <td>{item.email}</td>
+                                    <td>{item.phone}</td>
+                                    <td><a onClick={() => { LoadEdit(item.id) }} className="btn btn-success">Edit</a>
+                                        <a onClick={() => { Removefunction(item.id) }} className="btn btn-danger">Remove</a>
+                                        <a onClick={() => { LoadDetail(item.id) }} className="btn btn-primary">Details</a>
+                                    </td>
+                                </tr>
+                            ))
+                        }
