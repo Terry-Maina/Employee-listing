@@ -9,7 +9,7 @@ import EmpEdit from './EmpEdit';
 function App() {
   return (
     <div className="App">
-      <h1>Employee List</h1>
+      <h1>React Project</h1>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<EmpListing />}></Route>
