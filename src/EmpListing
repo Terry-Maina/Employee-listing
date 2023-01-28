@@ -69,3 +69,12 @@ const EmpListing = () => {
                                 </tr>
                             ))
                         }
+
+                        </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        );
+    }
