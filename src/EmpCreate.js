@@ -18,7 +18,7 @@ const EmpCreate = () => {
       const empdata={name,email,phone,active};
       
 
-      fetch("http://localhost:8000/employee",{
+      fetch("http://localhost:3000/employee",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
@@ -52,4 +52,13 @@ const EmpCreate = () => {
                                             <input value={id} disabled="disabled" className="form-control"></input>
                                         </div>
                                     </div>
+
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
+                                            <label>Name</label>
+                                            <input required value={name} onMouseDown={e=>valchange(true)} onChange={e=>namechange(e.target.value)} className="form-control"></input>
+                                        {name.length==0 && validation && <span className="text-danger">Enter the name</span>}
+                                        </div>
+                                    </div>
+
                                     
