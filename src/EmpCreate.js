@@ -68,4 +68,9 @@ const EmpCreate = () => {
                                         </div>
                                     </div>
 
-                                    
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
+                                            <label>Phone</label>
+                                            <input value={phone} onChange={e=>phonechange(e.target.value)} className="form-control"></input>
+                                        </div>
+                                    </div>
