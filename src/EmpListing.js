@@ -78,3 +78,5 @@ const EmpListing = () => {
             </div>
         );
     }
+
+    export default EmpListing;
