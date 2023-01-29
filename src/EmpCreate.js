@@ -82,4 +82,33 @@ const EmpCreate = () => {
                                             
                                         </div>
                                     </div>
-                                    
+
+                                    <div className="col-lg-12">
+                                        <div className="form-check">
+                                        <input checked={active} onChange={e=>activechange(e.target.checked)} type="checkbox" className="form-check-input"></input>
+                                            <label  className="form-check-label">Is Active</label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
+                                           <button className="btn btn-success" type="submit">Save</button>
+                                           <Link to="/" className="btn btn-danger">Back</Link>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default EmpCreate;
